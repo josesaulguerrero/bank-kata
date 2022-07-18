@@ -1,6 +1,6 @@
 package co.com.bank.interfaces;
 
 public interface IEncryptionAlgorithm {
-    String generate();
-    Boolean isValid(String string);
+    String generate(Integer salt, String content);
+    Boolean verify(String string);
 }
