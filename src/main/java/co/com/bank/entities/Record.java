@@ -46,12 +46,12 @@ public class Record {
     @Override
     public String toString() {
         return "Record{" +
-                "id=" + id.getValue() +
-                ", date=" + date +
-                ", credit=" + credit +
-                ", debit=" + debit +
-                ", previousBalance=" + previousBalance +
-                ", newBalance=" + newBalance +
+                    "id=" + id.getValue() +
+                    "previous balance=" + previousBalance.getValue() + " - " +
+                    "date=" + date.getValue() + " - " +
+                    "credit=" + credit.getValue() + " - " +
+                    "debit:" + debit.getValue() + " - " +
+                    "new balance=" + newBalance.getValue() +
                 '}';
     }
 }
