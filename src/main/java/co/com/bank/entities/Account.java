@@ -19,4 +19,16 @@ public class Account {
         this.statement = statement;
         this.balance = new Balance();
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public Holder getHolder() {
+        return holder;
+    }
+
+    public Balance getBalance() {
+        return balance;
+    }
 }
