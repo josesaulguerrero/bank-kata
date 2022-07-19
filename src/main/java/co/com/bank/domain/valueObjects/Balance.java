@@ -1,7 +1,7 @@
 package co.com.bank.domain.valueObjects;
 
 public class Balance {
-    private final Money value;
+    private Money value;
 
     public Balance() {
         this.value = Money.valueOf(0.0);
@@ -11,9 +11,20 @@ public class Balance {
         this.value = value;
     }
 
-    // update method?
+    public Money update(Money amount) {
+        this.value = amount;
+        return this.value;
+    }
 
     public Money getValue() {
         return value;
+    }
+
+    public Money subtract(Money amount) {
+        return this.value.subtract(amount);
+    }
+
+    public Money sum(Money amount) {
+        return this.value.sum(amount);
     }
 }

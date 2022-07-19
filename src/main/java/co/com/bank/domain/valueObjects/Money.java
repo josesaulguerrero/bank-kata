@@ -3,6 +3,10 @@ package co.com.bank.domain.valueObjects;
 public class Money {
     private final Double value;
 
+    public Money() {
+        this.value = 0.0;
+    }
+
     private Money(Double value) {
         this.value = value;
     }
