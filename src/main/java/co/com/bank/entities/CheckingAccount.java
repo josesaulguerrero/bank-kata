@@ -2,10 +2,10 @@ package co.com.bank.entities;
 
 import co.com.bank.domain.utils.UUIDGenerator;
 import co.com.bank.domain.valueObjects.Balance;
-import co.com.bank.domain.valueObjects.Money;
+import co.com.bank.interfaces.ICheckingAccountOperations;
 import co.com.bank.interfaces.IIdGenerator;
 
-public class Account {
+public class CheckingAccount implements ICheckingAccountOperations {
     private static final IIdGenerator idGenerator = new UUIDGenerator();
     // -----------
     private final String id;
@@ -13,11 +13,31 @@ public class Account {
     private final Statement statement;
     private final Balance balance;
 
-    public Account(Holder holder, Statement statement) {
+    public CheckingAccount(Holder holder, Statement statement) {
         this.id = idGenerator.generate();
         this.holder = holder;
         this.statement = statement;
         this.balance = new Balance();
+    }
+
+    @Override
+    public void withdraw() {
+
+    }
+
+    @Override
+    public void deposit() {
+
+    }
+
+    @Override
+    public void transfer() {
+
+    }
+
+    @Override
+    public void getStatement() {
+
     }
 
     public String getId() {
