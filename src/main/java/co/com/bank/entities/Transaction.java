@@ -9,11 +9,16 @@ public class Transaction {
     private final String id;
     private final Record record;
 
-    public Transaction() {
+    public Transaction(Record record) {
         this.id = idGenerator.generate();
+        this.record = record;
     }
 
     public String getId() {
         return id;
+    }
+
+    public Record getRecord() {
+        return record;
     }
 }

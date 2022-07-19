@@ -1,8 +1,7 @@
 package co.com.bank.entities;
 
 import co.com.bank.domain.utils.UUIDGenerator;
-import co.com.bank.domain.valueObjects.Date;
-import co.com.bank.domain.valueObjects.Money;
+import co.com.bank.domain.valueObjects.*;
 import co.com.bank.interfaces.IIdGenerator;
 
 public class Record {
