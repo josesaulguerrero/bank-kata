@@ -25,4 +25,12 @@ public class Statement {
     public List<Transaction> getTransactions() {
         return transactions;
     }
+
+    @Override
+    public String toString() {
+        return "Statement{" +
+                "id=" + id.getValue() +
+                ", transactions=" + transactions +
+                '}';
+    }
 }
