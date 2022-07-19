@@ -4,6 +4,8 @@ import co.com.bank.domain.valueObjects.Balance;
 import co.com.bank.domain.valueObjects.Id;
 import co.com.bank.domain.valueObjects.Money;
 
+import java.util.function.Consumer;
+
 public class CheckingAccount extends Account  {
 
     public CheckingAccount(Holder holder, Statement statement) {
@@ -22,7 +24,6 @@ public class CheckingAccount extends Account  {
         Transaction transaction = new Transaction(record);
         this.balance.update(newBalance.getValue());
         this.statement.addTransaction(transaction);
-        System.out.println("Your withdrawal was successful. Get your money at the window.");
     }
 
     @Override
@@ -36,17 +37,17 @@ public class CheckingAccount extends Account  {
         );
         Transaction transaction = new Transaction(record);
         this.statement.addTransaction(transaction);
-        System.out.println("Your deposit was successful. Thanks for choosing us.");
     }
 
     @Override
-    public void transfer(String targetId, Money money) {
-
+    public void transfer(Account targetAccount, Money amount) {
+        this.withdraw(amount);
+        targetAccount.deposit(amount);
     }
 
     @Override
-    public void getStatement() {
-
+    public void getStatement(Consumer<Statement> consumer) {
+        consumer.accept(this.statement);
     }
 
     public Id getId() {
