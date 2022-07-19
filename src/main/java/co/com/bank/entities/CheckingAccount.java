@@ -4,6 +4,7 @@ import co.com.bank.domain.valueObjects.Balance;
 import co.com.bank.domain.valueObjects.Id;
 import co.com.bank.domain.valueObjects.Money;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 public class CheckingAccount extends Account  {
@@ -35,6 +36,7 @@ public class CheckingAccount extends Account  {
                 amount,
                 new Money()
         );
+        this.balance.update(newBalance.getValue());
         Transaction transaction = new Transaction(record);
         this.statement.addTransaction(transaction);
     }

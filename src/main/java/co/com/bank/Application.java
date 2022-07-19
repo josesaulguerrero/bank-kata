@@ -25,7 +25,11 @@ public class Application {
         accountOne.transfer(accountTwo, valueOf(900.0));
         accountTwo.deposit(valueOf(1000.0));
 
-        accountOne.getStatement(System.out::println);
-        accountTwo.getStatement(System.out::println);
+        accountOne.getStatement((statement) -> {
+            statement.getTransactions().forEach(System.out::println);
+        });
+        accountTwo.getStatement((statement) -> {
+            statement.getTransactions().forEach(System.out::println);
+        });
     }
 }
