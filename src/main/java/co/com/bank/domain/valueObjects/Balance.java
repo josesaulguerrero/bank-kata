@@ -11,20 +11,19 @@ public class Balance {
         this.value = value;
     }
 
-    public Money update(Money amount) {
+    public void update(Money amount) {
         this.value = amount;
-        return this.value;
+    }
+
+    public Balance subtract(Money amount) {
+        return new Balance(this.value.subtract(amount));
+    }
+
+    public Balance sum(Money amount) {
+        return new Balance(this.value.sum(amount));
     }
 
     public Money getValue() {
         return value;
-    }
-
-    public Money subtract(Money amount) {
-        return this.value.subtract(amount);
-    }
-
-    public Money sum(Money amount) {
-        return this.value.sum(amount);
     }
 }

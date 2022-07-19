@@ -12,21 +12,31 @@ public class CheckingAccount extends Account  {
 
     @Override
     public void withdraw(Money amount) {
-        Money newBalance = balance.update(balance.subtract(amount));
+        Balance newBalance = balance.subtract(amount);
         Record record = new Record(
                 this.balance.getValue(),
-                newBalance,
+                newBalance.getValue(),
                 Money.valueOf(0.0),
                 amount
         );
         Transaction transaction = new Transaction(record);
+        this.balance.update(newBalance.getValue());
         this.statement.addTransaction(transaction);
         System.out.println("Your withdrawal was successful. Get your money at the window.");
     }
 
     @Override
-    public void deposit(Money money) {
-
+    public void deposit(Money amount) {
+        Balance newBalance = balance.sum(amount);
+        Record record = new Record(
+                this.balance.getValue(),
+                newBalance.getValue(),
+                amount,
+                new Money()
+        );
+        Transaction transaction = new Transaction(record);
+        this.statement.addTransaction(transaction);
+        System.out.println("Your deposit was successful. Thanks for choosing us.");
     }
 
     @Override
