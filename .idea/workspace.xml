@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="29b87e88-59c5-4e6e-a701-7f7ee00cc871" name="Changes" comment="OOPS! I used strings for ids instead of the Id value object!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/CheckingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/CheckingAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Holder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Holder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Bank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

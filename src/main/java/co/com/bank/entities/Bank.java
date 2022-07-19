@@ -2,15 +2,14 @@ package co.com.bank.entities;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class Bank {
     private static Bank instance;
-    private final List<CheckingAccount> checkingAccounts;
+    private final List<Account> accounts;
     // ------
 
     private Bank() {
-        this.checkingAccounts = new ArrayList<>();
+        accounts = new ArrayList<>();
     }
 
     public static Bank getInstance() {
@@ -20,7 +19,7 @@ public class Bank {
         return instance;
     }
 
-    public static void createAccount(Account account) {
-
+    public void createAccount(Account account) {
+        this.accounts.add(account);
     }
 }
