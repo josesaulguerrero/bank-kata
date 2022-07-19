@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="29b87e88-59c5-4e6e-a701-7f7ee00cc871" name="Changes" comment="OOPS! I used strings for ids instead of the Id value object!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/domain/utils/UUIDGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/domain/utils/UUIDGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/domain/valueObjects/Id.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/domain/valueObjects/Id.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/CheckingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/CheckingAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Record.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Statement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/interfaces/IIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/interfaces/IIdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Holder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Holder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,6 +51,14 @@
       <option name="presentableId" value="Default" />
       <updated>1658160496419</updated>
     </task>
+    <task id="LOCAL-00001" summary="OOPS! I used strings for ids instead of the Id value object!">
+      <created>1658190648047</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658190648047</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

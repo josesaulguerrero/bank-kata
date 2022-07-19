@@ -2,19 +2,11 @@ package co.com.bank.entities;
 
 import co.com.bank.domain.valueObjects.Balance;
 import co.com.bank.domain.valueObjects.Id;
-import co.com.bank.interfaces.ICheckingAccountOperations;
 
-public class CheckingAccount implements ICheckingAccountOperations {
-    private final Id id;
-    private final Holder holder;
-    private final Statement statement;
-    private final Balance balance;
+public class CheckingAccount extends Account  {
 
     public CheckingAccount(Holder holder, Statement statement) {
-        this.id = new Id();
-        this.holder = holder;
-        this.statement = statement;
-        this.balance = new Balance();
+        super(holder, statement, new Balance());
     }
 
     @Override
@@ -52,7 +44,7 @@ public class CheckingAccount implements ICheckingAccountOperations {
     @Override
     public String toString() {
         return "CheckingAccount{" +
-                "id='" + id.getValue() + '\'' +
+                "id='" + this.id.getValue() + '\'' +
                 ", holder=" + holder.getId() + " - " + holder.getName() +
                 ", statement=" + statement.getTransactions() +
                 ", balance=" + balance.getValue() +

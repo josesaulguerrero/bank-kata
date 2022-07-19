@@ -1,5 +1,6 @@
 package co.com.bank.entities;
 
+import co.com.bank.domain.valueObjects.Id;
 import co.com.bank.domain.valueObjects.Password;
 
 public class Holder extends Person {
@@ -10,7 +11,7 @@ public class Holder extends Person {
         this.password = new Password(password);
     }
 
-    public String getId() {
+    public Id getId() {
         return this.id;
     }
 
