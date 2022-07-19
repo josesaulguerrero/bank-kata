@@ -18,4 +18,12 @@ public class Transaction {
     public Record getRecord() {
         return record;
     }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "id=" + id.getValue() +
+                ", record=" + record +
+                '}';
+    }
 }

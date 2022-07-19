@@ -32,4 +32,11 @@ public class Money {
     public Double getValue() {
         return value;
     }
+
+    @Override
+    public String toString() {
+        return "Money{" +
+                "value=" + value +
+                '}';
+    }
 }

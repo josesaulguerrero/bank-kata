@@ -33,4 +33,11 @@ public class Date {
     public LocalDateTime getValue() {
         return value;
     }
+
+    @Override
+    public String toString() {
+        return "Date{" +
+                "value=" + value +
+                '}';
+    }
 }

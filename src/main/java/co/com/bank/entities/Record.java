@@ -42,4 +42,16 @@ public class Record {
     public Money getNewBalance() {
         return newBalance;
     }
+
+    @Override
+    public String toString() {
+        return "Record{" +
+                "id=" + id.getValue() +
+                ", date=" + date +
+                ", credit=" + credit +
+                ", debit=" + debit +
+                ", previousBalance=" + previousBalance +
+                ", newBalance=" + newBalance +
+                '}';
+    }
 }
