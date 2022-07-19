@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29b87e88-59c5-4e6e-a701-7f7ee00cc871" name="Changes" comment="">
+    <list default="true" id="29b87e88-59c5-4e6e-a701-7f7ee00cc871" name="Changes" comment="OOPS! I used strings for ids instead of the Id value object!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/domain/utils/UUIDGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/domain/utils/UUIDGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/domain/valueObjects/Id.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/domain/valueObjects/Id.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/CheckingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/CheckingAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Statement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/entities/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bank/interfaces/IIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bank/interfaces/IIdGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +69,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="OOPS! I used strings for ids instead of the Id value object!" />
+    <option name="LAST_COMMIT_MESSAGE" value="OOPS! I used strings for ids instead of the Id value object!" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

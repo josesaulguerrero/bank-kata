@@ -1,13 +1,9 @@
 package co.com.bank.entities;
 
-import co.com.bank.domain.utils.UUIDGenerator;
 import co.com.bank.domain.valueObjects.*;
-import co.com.bank.interfaces.IIdGenerator;
 
 public class Record {
-    private static final IIdGenerator idGenerator = new UUIDGenerator();
-    // -----------
-    private final String id;
+    private final Id id;
     private final Date date;
     private final Money credit;
     private final Money debit;
@@ -15,7 +11,7 @@ public class Record {
     private final Money newBalance;
 
     public Record(Money previousBalance, Money newBalance, Money credit, Money debit) {
-        this.id = idGenerator.generate();
+        this.id = new Id();
         this.previousBalance = previousBalance;
         this.newBalance = newBalance;
         this.date = new Date();
@@ -23,7 +19,7 @@ public class Record {
         this.debit = debit;
     }
 
-    public String getId() {
+    public Id getId() {
         return id;
     }
 

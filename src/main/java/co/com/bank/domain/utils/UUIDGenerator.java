@@ -1,5 +1,6 @@
 package co.com.bank.domain.utils;
 
+import co.com.bank.domain.valueObjects.Id;
 import co.com.bank.interfaces.IIdGenerator;
 
 import java.util.UUID;

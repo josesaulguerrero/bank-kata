@@ -1,20 +1,17 @@
 package co.com.bank.entities;
 
-import co.com.bank.domain.utils.UUIDGenerator;
 import co.com.bank.domain.valueObjects.Balance;
+import co.com.bank.domain.valueObjects.Id;
 import co.com.bank.interfaces.ICheckingAccountOperations;
-import co.com.bank.interfaces.IIdGenerator;
 
 public class CheckingAccount implements ICheckingAccountOperations {
-    private static final IIdGenerator idGenerator = new UUIDGenerator();
-    // -----------
-    private final String id;
+    private final Id id;
     private final Holder holder;
     private final Statement statement;
     private final Balance balance;
 
     public CheckingAccount(Holder holder, Statement statement) {
-        this.id = idGenerator.generate();
+        this.id = new Id();
         this.holder = holder;
         this.statement = statement;
         this.balance = new Balance();
@@ -40,7 +37,7 @@ public class CheckingAccount implements ICheckingAccountOperations {
 
     }
 
-    public String getId() {
+    public Id getId() {
         return id;
     }
 
@@ -50,5 +47,15 @@ public class CheckingAccount implements ICheckingAccountOperations {
 
     public Balance getBalance() {
         return balance;
+    }
+
+    @Override
+    public String toString() {
+        return "CheckingAccount{" +
+                "id='" + id.getValue() + '\'' +
+                ", holder=" + holder.getId() + " - " + holder.getName() +
+                ", statement=" + statement.getTransactions() +
+                ", balance=" + balance.getValue() +
+                '}';
     }
 }

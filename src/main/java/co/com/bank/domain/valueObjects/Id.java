@@ -8,7 +8,7 @@ public class Id {
     //--------------
     private final String value;
 
-    public Id(IIdGenerator idGenerator) {
+    public Id() {
         this.value = idGenerator.generate();
     }
 
